@@ -1,0 +1,33 @@
+<html>
+<head>
+    <title>Факторіал</title>
+
+    Напишіть програму, яка буде розраховувати та виводити на екран факторіал трьох чисел, за допомогою циклу do-while.
+
+    <script>
+
+        var counter = prompt("Введіть число");
+        var factorial = 1;
+
+        document.write("Факторіал числа: " + counter + "! = ");
+
+        do {
+
+            if (counter == 0) {
+                factorial = 1;
+                break;
+            }
+
+            factorial = factorial * counter;
+            counter = counter - 1;
+        }
+        while (counter > 0);
+
+        document.write(factorial);
+
+    </script>
+
+</head>
+<body>
+</body>
+</html>

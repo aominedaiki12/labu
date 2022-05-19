@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title> 
+<p>
+    Створіть функцію-конструктор Box (коробка) для створення об'єкта з властивостями Height (висота), Width (ширина), Depth (глибина) і Material (матеріал). <br>
+    Також в об'єкті повинні бути методи Volume – для отримання об’єму та Equals () – для порівняння об'єктів, об'єкти повинні вважатися рівними якщо містять однакові значення в властивості Material.
+</p>
+
+</head>
+<body>
+    <script>
+        var Box = function (name,material) {
+            this.name = name;
+            this.material = material;
+        this.Volume = function (heigh, width, depth){
+            this.heigh = heigh;
+            this.width = width;
+            this.depth = depth;
+            console.log('Объем коробки ', heigh*width*depth);
+        }
+        this.equals = function (compareWith){
+            console.log('Порівняння ', this.material === compareWith.material);
+        }
+        
+        
+        }
+        var Box1 = new Box (Box1,"wood");
+        console.log('Матеріал коробки 1 - ', Box1.material);
+        Box1.Volume(5, 15, 25);
+        var Box2 = new Box (Box2, 'steel');
+        console.log('Матеріал коробки 2 - ', Box2.material);
+        Box1.Volume(5, 10, 25);
+        Box1.equals(Box2);
+
+    </script>
+</body>
+</html>

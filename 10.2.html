@@ -1,0 +1,60 @@
+<html>
+<head>
+    <title>Масиви в JavaScript</title>
+
+<p>
+	Створити масив розмірністю N елементів, заповнити його довільними цілими значеннями. <br>
+	Вивести найбільше значення масиву, найменше значення масиву, загальну суму елементів, середнє арифметичне всіх елементів, вивести всі непарні значення.
+</p>
+
+    <script type="text/javascript">
+
+
+    var arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14];
+	
+	document.write(arr);
+	document.write("<hr />");
+	
+	var sum = 0;
+	for (var i=0; i < arr.length; i++)
+		{
+		sum += arr[i];
+		}
+	document.write("сума:" +sum+ "<br/>");
+	
+	var result = sum/arr.length;
+	document.write("середнє значення:" +result+ "<br/>");
+	document.write("<hr />");
+
+   var max;
+   var min = arr[0]
+	for (var i = 0; i < arr.length; i++) 
+		{
+			if (arr[i] > max);
+			max = arr[i];
+		}
+		{
+			if (arr[i] < min)
+			{min = arr[i]};
+		}
+	document.write("максимальне значення:" + max +("<br/>"));
+	document.write("мінімальне значенняе: " + min+("<br/>"));
+	document.write("<hr />");
+	
+	
+	for (var arr=0; arr < 14; arr++)
+		{
+			if (arr % 2 == !0)
+			{
+				document.write("не парне число:" + arr +("<br/>"));
+			}
+		}
+	document.write("<hr />");
+	
+	
+    </script>
+
+</head>
+<body>
+</body>
+</html>

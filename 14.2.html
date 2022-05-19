@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title> 
+<p>
+    Розробіть сторінку з будь-якою кількістю HTML елементів. Створіть модуль, який після завантаження сторінки поміняє текст у всіх параграфах на PARAGRAPH. <br>
+    Ви повинні розробити дві версії модуля з використанням об'єкта в якості простору імен та з використанням анонімної функції.
+</p>
+
+</head>
+<body>
+    <p>брррря</p>
+    <p>трррря</p>
+    <p>кряяяя</p>
+    <p>тряяяяя</p>
+    <p>кряяяяяяя</p>
+    
+
+    <script>
+        var strMessage1 = document.getElementsByTagName("p");
+
+        var Module1 = {};
+
+        Module1.name = "MODULE1"; 
+
+        Module1.startModule1 = function () {
+            for (i=0; i < strMessage1.length; i++) {
+                strMessage1[i].innerHTML = "PARAGRAPH";
+            }
+        }
+
+        Module1.startModule1();
+        
+
+       
+    </script>
+</body>
+</html>

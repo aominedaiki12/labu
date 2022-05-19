@@ -1,0 +1,64 @@
+<html>
+<head>
+    <title>оператори</title>
+
+<p>
+    Створіть чотири функції для арифметичних дій: (Add – додавання, Sub – віднімання, Mul – множення, Div – ділення). <br>
+    Кожна функція повинна приймати два параметри і виводити на екран результат обчислення. <br>
+    Функція розподілу має робити перевірку ділення на нуль. <br>
+    Користувач вводить значення, над якими хоче зробити операцію та вибирає саму операцію.
+</p>
+
+    <script>
+
+        function add(a, b) {
+            return a + b;
+        }
+
+        function sub(a, b) {
+            return a - b;
+        }
+
+        function mul(a, b) {
+            return a * b;
+        }
+
+        function div(a, b) {
+            return a / b;
+        }
+
+        var operand1 = prompt("Введіть перше число: ");
+        var sign = prompt("Введіть знак арифметичної операції: + - * /");
+        var operand2 = prompt("введіть друге число: ");
+        var result = undefined;
+
+        operand1 = parseInt(operand1);
+        operand2 = parseInt(operand2);
+
+        switch (sign) {
+            case "+":
+                result = add(operand1, operand2);
+                break;
+            case "-":
+                result = sub(operand1, operand2);
+                break;
+            case "*":
+                result = mul(operand1, operand2);
+                break;
+            case "/":
+                result = div(operand1, operand2);
+                break;
+            default:
+                document.write("<p><b style='color:red'>" + sign + "</b> - не являється знаком.");
+        }
+
+        if (result != undefined)
+            document.write("<p>" + operand1 + " " + sign + " " + operand2 + " = " + result);
+
+    </script>
+
+</head>
+<body>
+</body>
+</html>
+

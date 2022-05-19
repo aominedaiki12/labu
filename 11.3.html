@@ -1,0 +1,84 @@
+<html>
+<head>
+    <title>Функции</title>
+
+<p>
+	Напишіть функцію, яка буде приймати число та визначати: <br>
+чи є введене число додатнім або від’ємним; <br>
+чи є воно простим; <br>
+чи ділиться воно на 2, 5, 3, 6, 9 без залишку.
+
+</p>
+
+    <script>
+
+        var n=prompt("введіть число");
+	n=parseInt(n);
+	if ((n%2==0)&&(n!=2)) 
+     document.write("Збірне число");
+	else if (n==2)
+     document.write("Просте число");
+	else{ 
+     k=Math.round(Math.sqrt(n));
+     flag = false;
+             
+     for(i=2; i<k+1; i++)
+        if(n%i==0)
+        {
+          document.write("Збірне число");
+          flag = true;
+          break;
+         }
+            
+     if (flag == false)
+       document.write("Просте число");
+}
+document.write("<hr/>");
+	
+		 
+	var x = 2;
+	var b = n%x;
+	document.write("залишок з числа 2: " + b + "<br />");
+
+	var z = 3;
+	var c = n%z;
+	document.write("залишок з числа 3: " + c + "<br />");
+
+	var v = 5;
+	var d = n%v;
+	document.write("залишок з числа 5: " + d + "<br />");
+
+	var k = 6;
+	var m = n%k;
+	document.write("залишок з числа 6: " + m + "<br />");
+
+	var l = 9;
+	var n = n%l;
+	document.write("залишок з числа 9: " + n + "<br />");
+	document.write("<hr/>");
+	
+		 
+			var n;
+				if (n < 0)
+				{      
+				n="відмінне число";
+				}				
+				if (n > 0)
+				{
+				n="позитивне число"; 
+				}
+				if (n == 0)
+				{
+				n="число 0"; 
+				}
+		document.write(n);
+		document.write("<hr/>");
+
+		
+		 
+
+    </script>
+</head>
+<body>
+</body>
+</html>

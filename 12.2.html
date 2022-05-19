@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title> 
+<p>
+    Створити об'єкт «Документ», в якому визначити властивості «Тема, Тіло, Футер, Дата». Створити в об'єкті вкладений об'єкт – «Додаток». <br>
+    Створити в об'єкті «Додаток», вкладені об'єкти, «Тема, Тіло, Футер, Дата». Створити методи для заповнення та відображення документа.
+</p>
+
+</head>
+<body>
+    <script>
+       var documenT = 
+		{
+            theme: 'black',
+            body: 'main',
+            footer: 'down',
+            date: 'today',
+            dodatok: 
+			{ 
+                theme: 
+				{
+                    black: 'green'
+                }, 
+                body:
+				{
+                    main: 'page'
+                },
+                footer: 
+				{
+                    down: 'side'
+                }, 
+                date: 
+				{
+                    today: 'green'
+                }
+            }
+        };
+
+        function start () {
+            documenT.theme = prompt("Введіть тему");
+            documenT.body = prompt("Введіть тіло");
+            documenT.footer = prompt("Введіть футер");
+            documenT.date = prompt("Введіть дату");
+            alert(documenT.theme);
+            alert(documenT.body);
+            alert(documenT.footer);
+            alert(documenT.date);
+
+        }
+        start();
+    </script>
+</body>
+</html>

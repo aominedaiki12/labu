@@ -1,0 +1,87 @@
+<html>
+<head>
+    <title>Фігури</title>
+
+	<p>
+		Використовуючи цикли намалюйте в браузері за допомогою <br>
+пропусків (&nbsp) та зірочок (*): <br>
+прямокутник; <br>
+прямокутний трикутник; <br>
+рівносторонній трикутник;
+ромб.
+
+	</p>
+
+    <script>
+    var a1 = 7;
+	var b1 = 20;
+	var c1 = 1;
+	
+	
+	for (var b=0; b<a1; b++)
+	{ 
+		for (var a=0; a<b1; a++)
+		{
+			 document.write("*");
+		}
+	document.write("<br />");
+	}
+
+	for (var b=0; b<a1; b++)
+	{
+		for (var a=0; a < b + 1; a++)
+		{
+			 document.write("*");
+			 document.write(" ");
+		}
+	document.write("<br />");  
+	}
+	
+	document.write("<center>");
+    for (var i = 0; i <= a1; i++)
+	{
+        for (var j = i; j < a1; j++)
+		{
+        document.write(" ");
+        }
+        for (var k = 1; k <= (2 * i) - 1; k++) 
+		{
+        document.write("*");
+        }
+        document.write("<br/>");
+	}
+	document.write("</center>");
+		
+	
+	
+	document.write("<center>");
+	for(var a=0; a<=a1; a++)
+	{
+		for (var b=0; b < 2 * a + 1; b++)
+			{
+			 document.write("*");
+			 document.write(" ");
+			}
+	document.write("<br />");
+	
+	}
+	
+    for (var a=0; a<=a1; a++)
+	{
+		for (var b=(a1-a)*2+1; b>0; b--)
+			{
+			document.write("*");
+			document.write(" ");
+			}
+    document.write("<br />");  
+	}
+	document.write("</center>");
+	
+
+	
+   </script>
+
+</head>
+<body>
+</body>
+</html>
